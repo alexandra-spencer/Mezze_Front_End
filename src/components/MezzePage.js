@@ -12,7 +12,7 @@ function MezzePage() {
     const [filter, setFilter] = useState("All");
     
         useEffect(() => {
-            fetch(`http://localhost:3000/mezzes`)
+            fetch(`https://habibi-mezze.herokuapp.com/mezzes`)
             .then(res => res.json())
             .then(setMezzes);  
         }, []);
@@ -49,7 +49,7 @@ function MezzePage() {
 
     function allMezzes(){
        
-          fetch(`http://localhost:3000/mezzes`)
+          fetch(`https://habibi-mezze.herokuapp.com/mezzes`)
           .then(res => res.json())
           .then(setMezzes);  
     
